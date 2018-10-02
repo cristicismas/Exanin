@@ -1,0 +1,28 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ebebeb;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer > * {
+    margin: 20px;
+}
+
+footer a {
+    color: rgb(85, 85, 85);
+    margin: 0;
+}
+
+footer a:hover {
+    color: rgb(0, 0, 0);
+}
+
+@media (max-width: 720px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}

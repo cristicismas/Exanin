@@ -1,0 +1,21 @@
+#incomes .incomes-list {
+  transition: all .3s;
+  border-left: 5px solid rgb(133, 252, 97);
+}
+
+#incomes .exchange-item > hr {
+  border: 1px solid #aaa;
+  border-radius: 15px;
+}
+
+#incomes .exchange-item .exchange-content .exchange-value {
+  color: rgb(69, 209, 26);
+}
+
+@media only screen and (max-width: 900px) {
+  #incomes .incomes-list {
+    border: none;
+    padding-inline-start: 0;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,130 @@
+#exchanges .section-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-bottom: 0;
+}
+
+#exchanges .section-title button,
+#exchanges .section-title button:focus {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 0 10px;
+  margin-bottom: 10px;
+  font-size: 35px;
+  font-weight: lighter;
+  width: 100%;
+  height: 100%;
+  align-self: flex-end;
+}
+
+#exchanges .section-title button:hover {
+  cursor: pointer;
+}
+
+#exchanges .section-title button:first-child {
+  border-right: 1px solid #666;
+}
+
+#exchanges .exchanges-list-labels {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  padding: 5px 15px;
+  border-bottom: 2px solid #555;
+}
+
+#exchanges .exchanges-list-labels * {
+  width: 20%;
+  padding: 0 15px;
+  font-weight: bold;
+}
+
+#exchanges .exchanges-list-labels *:nth-last-child(-n+2) {
+  text-align: right;
+}
+
+#exchanges .exchange-item .exchange-content {
+  font-size: 17px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
+  transition: all .2s;
+}
+
+#exchanges .exchange-item .exchange-content:hover {
+  background-color: #fafac1;
+}
+
+#exchanges .exchange-item .exchange-content > * {
+  width: 20%;
+  padding: 0 15px;
+  overflow-x: auto;
+}
+
+#exchanges .exchange-item .exchange-content > *:nth-last-child(-n+2) {
+  text-align: right;
+}
+
+#exchanges .exchange-item .exchange-content button {
+  margin-top: 15px;
+  font-size: 17px;
+  background-color: transparent;
+  color: red;
+  text-decoration: underline;
+  border: none;
+}
+
+#exchanges .exchange-item .exchange-content button:hover {
+  cursor: pointer;
+}
+
+#exchanges .exchange-item .exchange-content button:focus {
+  outline: none;
+}
+
+#exchanges .exchange-item .exchange-content .exchange-collection {
+  font-weight: initial;
+}
+
+@media only screen and (max-width: 900px) {
+  #exchanges .exchanges-list-labels {
+    margin: 0;
+    font-size: 14px;
+    padding: 0 5px;
+    overflow-x: auto;
+  }
+
+  #exchanges .exchange-item .exchange-content > * {
+    padding: 0 5px;
+  }
+
+  #exchanges .exchange-item .exchange-content {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  #exchanges .section-title {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  #exchanges .section-title button,
+  #exchanges .section-title button:focus {
+    font-size: 25px;
+    padding: 20px;
+    width: 170px;
+    text-align: center;
+    margin: auto;
+  }
+
+  #exchanges .section-title button:first-child {
+    border-right: none;
+    border-bottom: 2px solid #555;
+  }
+}

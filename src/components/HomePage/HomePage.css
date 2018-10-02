@@ -1,0 +1,146 @@
+#home h3 {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(111, 110, 110);
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+#home .chart-container {
+  margin: auto;
+  position: relative; 
+  height: 50%;
+  width: 50%;
+}
+  
+#home #hero-chart {
+  margin-top: 40px;
+}
+
+#home section {
+  margin: 10vh 0;
+  padding: 20px 0;
+  width: 100%;
+}
+
+#home section:first-of-type {
+  background-color: #ebebeb;
+}
+
+#home section:last-of-type {
+  margin-bottom: 0;
+}
+
+#home section .content {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#home section .content p {
+  font-size: 30px;
+  color: rgb(80, 80, 80);
+  margin-top: 10%;
+}
+
+#home section .content .chart-container {
+  position: relative;
+  top: 10vh;
+  margin: 0 50px;
+  height: 100%;
+}
+
+#home section #cta {
+  background-color: rgb(0, 121, 202);
+  font-size: 22px;
+  opacity: 0.9;
+  word-spacing: 5px;
+  text-decoration: none;
+  padding: 20px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  margin: 70px auto;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  width: 120px;
+  display: block;
+  transition: all .3s;
+}
+
+#home section #cta:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+@media (min-width: 1700px) {
+  #home #hero-chart {
+    width: 30vw;
+  }
+}
+
+@media (min-width: 2000px) {
+  #home section .content .chart-container {
+    height: 50%;
+    width: 30%;
+  }
+
+  #home section .content p {
+    margin: 10% auto;
+  }
+}
+
+@media (max-width: 1300px) {
+  #home section .content {
+    width: 80%;
+  }
+}
+
+@media (max-width: 970px) {
+  #home section .content {
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #home section:nth-child(odd) .content {
+    flex-direction: column-reverse;
+  }
+
+  #home section .content p {
+    margin: 200px auto;
+  }
+
+  #home section .content .chart-container {
+    top: 0;
+    margin: 50px auto;
+    height: 10vh;
+    width: 50vw;
+  }
+
+  #home .chart-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  #home section #cta {
+    width: 35%;
+  }
+
+  #home section .content .chart-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  #home section .content p {
+    margin: 100px auto;
+  }
+}

@@ -1,0 +1,24 @@
+li {
+  list-style-type: none;
+}
+
+.dropdown-content {
+  margin-top: 50px;
+  overflow: hidden;
+  max-height: 0;
+  transition: all .5s;
+}
+
+.opener {
+  font-size: 22px;
+  margin: 15px;
+  color: #555;
+  border: 2px solid transparent;
+  transition: all .2s;
+}
+
+.opener:hover {
+  color: #000;
+  cursor: pointer;
+  border-bottom: 2px solid #333;
+}

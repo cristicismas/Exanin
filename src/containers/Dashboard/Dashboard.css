@@ -1,0 +1,21 @@
+#dashboard {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+#dashboard .section-title {
+  margin: 40px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 35px;
+}
+
+#dashboard section:not(:first-of-type) {
+  margin-top: 105px;
+}
+
+#dashboard section > hr {
+  border: 1px solid #666;
+  margin-bottom: 35px;
+}

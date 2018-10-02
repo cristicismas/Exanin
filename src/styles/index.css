@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  background-color: #f5f5f5;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 720px) {
+  #root {
+    padding-bottom: 220px;
+  }
+}
+
+@media (max-width: 720px) and (orientation: landscape) {
+  #root {
+    padding-bottom: 450px;
+  }
+}

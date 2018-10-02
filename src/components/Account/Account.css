@@ -1,0 +1,60 @@
+#account {
+  width: 90%;
+  margin: auto;
+}
+
+#account .account-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#account h1 {
+  margin: 40px;
+  font-weight: lighter;
+  color: #222;
+}
+
+#account a {
+  color: #222;
+}
+
+#account #logout {
+  margin: 12px 30px;
+  font-size: 18px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#account .account-settings {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+#account #logout,
+#account .account-settings > a {
+  margin: 12px 30px;
+  font-size: 18px;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color .2s;
+}
+
+#account #logout:hover,
+#account .account-settings > a:hover {
+  color: #000;
+}
+
+#account .account-settings #delete-account {
+  color: #ca0000;
+  display: inline;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: underline;
+  outline: none;
+}

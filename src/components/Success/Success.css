@@ -1,0 +1,13 @@
+.success-container {
+  text-align: center;
+}
+
+.success {
+  background-color: rgba(0, 214, 14, 0.4);
+  padding: 20px 40px;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+}
