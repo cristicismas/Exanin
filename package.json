@@ -2,6 +2,7 @@
   "name": "exanin",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cristicismas.github.io/exanin",
   "dependencies": {
     "axios": "^0.18.0",
     "chart.js": "^2.7.2",
