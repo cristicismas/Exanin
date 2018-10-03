@@ -18,7 +18,7 @@ class Account extends Component {
 
   logout() {
     this.props.logout();
-    this.props.history.push('/')
+    this.props.history.push('/exanin/')
   }
 
   handleRemoveAccount(userId) {
