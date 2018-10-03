@@ -25,14 +25,14 @@ class Main extends Component {
   handleLogin(data) {
     this.props.authUser('login', data).then(() => {
       this.setState({ successMessage: 'Successfully logged in!' });
-      this.props.history.push('/account');
+      this.props.history.push('/exanin/account');
     });
   }
 
   handleSignup(data) {
     this.props.authUser('signup', data).then(() => {
       this.setState({ successMessage: 'Successfully signed up!' });
-      this.props.history.push('/account');
+      this.props.history.push('/exanin/account');
     });
   }
 
