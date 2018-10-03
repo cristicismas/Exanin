@@ -45,9 +45,9 @@ class Main extends Component {
     return (
       <main>
         <Switch>
-          <Route exact path='/' render={props => <HomePage currentUser={currentUser} />} />
+          <Route exact path='/exanin' render={props => <HomePage currentUser={currentUser} />} />
           
-          <Route exact path='/signup' 
+          <Route exact path='/exanin/signup' 
             render={props => 
               <AuthForm 
                 formTitle='Sign Up'
@@ -58,7 +58,7 @@ class Main extends Component {
                 errors={errors} 
                 {...props} />} />
 
-          <Route exact path='/login' 
+          <Route exact path='/exanin/login' 
             render={props =>
               <AuthForm 
                 formTitle='Log In'
@@ -69,11 +69,11 @@ class Main extends Component {
                 errors={errors} 
                 {...props} />} />
 
-          <Route exact path='/dashboard'
+          <Route exact path='/exanin/dashboard'
             render={props => 
               <AuthDashboard {...props} />}/>
 
-          <Route exact path='/account'
+          <Route exact path='/exanin/account'
             render={props => 
               <AuthAccount currentUser={currentUser} logout={this.props.logout} deleteAccount={deleteAccount} successMessage={this.state.successMessage} {...props} />}/>
 

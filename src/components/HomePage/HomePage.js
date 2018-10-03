@@ -104,8 +104,8 @@ class HomePage extends Component {
         <section>
           {
             isAuthenticated ? 
-            (<Link to='/dashboard' id='cta'>Dashboard</Link>):
-            (<Link to='/signup' id='cta'>Sign Up</Link>)
+            (<Link to='/exanin/dashboard' id='cta'>Dashboard</Link>):
+            (<Link to='/exanin/signup' id='cta'>Sign Up</Link>)
           }
         </section>
       </div>

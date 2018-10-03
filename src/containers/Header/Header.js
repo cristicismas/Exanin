@@ -12,10 +12,10 @@ class Header extends Component {
             <a>Dashboard</a>
             <a>Account</a>
           </div>
-          <Link to='/'><h1>Exanin</h1></Link>
+          <Link to='/exanin'><h1>Exanin</h1></Link>
           <div className='buttons-group'>
-            <Link to='/dashboard'>Dashboard</Link>
-            <Link to='/account'>Account</Link>
+            <Link to='/exanin/dashboard'>Dashboard</Link>
+            <Link to='/exanin/account'>Account</Link>
           </div>
         </header>
       );
@@ -26,10 +26,10 @@ class Header extends Component {
             <a>Sign Up</a>
             <a>Login</a>
           </div>
-          <Link to='/'><h1>Exanin</h1></Link>
+          <Link to='/exanin'><h1>Exanin</h1></Link>
           <div className='buttons-group'>
-            <Link to='/signup'>Sign Up</Link>
-            <Link to='/login'>Login</Link>
+            <Link to='/exanin/signup'>Sign Up</Link>
+            <Link to='/exanin/login'>Login</Link>
           </div>
         </header>
       );
