@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Form.css';
 
+import ReCAPTCHA from 'react-google-recaptcha';
 import Error from '../Error/Error';
 
 class AuthForm extends Component {
@@ -17,6 +18,10 @@ class AuthForm extends Component {
     this.setState({
       [e.target.name]: e.target.value
     });
+  }
+
+  handleRecaptchaChange(response) {
+    this.setState({ 'recaptcha-response': response });
   }
 
   handleSubmit(e) {
@@ -65,6 +70,12 @@ class AuthForm extends Component {
               autoCorrect='off' 
               required 
               onChange={this.handleChange} />
+          </div>
+
+          <div className='form-group recaptcha-container'>
+            <ReCAPTCHA 
+              sitekey='6Le2cXMUAAAAALrzTqMHzJvWTknrZpC7QWJebFFj' 
+              onChange={this.handleRecaptchaChange.bind(this)} />
           </div>
 
           <button type='submit'>Confirm</button>
