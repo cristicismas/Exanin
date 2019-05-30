@@ -29,7 +29,8 @@ header .buttons-group {
   margin-right: 20px;
 }
 
-header .buttons-group a {
+header .buttons-group > * {
+  display: inline;
   color: rgb(80, 80, 80);
   font-size: 22px;
   margin: 0 25px 0 15px;

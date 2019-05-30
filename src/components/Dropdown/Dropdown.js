@@ -26,7 +26,7 @@ class Dropdown extends Component {
 
     return (
       <div className="dropdown-container">
-      <a className="opener" onClick={this.dropItems}>{title}</a>
+      <div className="opener" onClick={this.dropItems}>{title}</div>
         <div className="dropdown-content">
           {items}
         </div>

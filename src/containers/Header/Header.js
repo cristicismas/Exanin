@@ -9,8 +9,8 @@ class Header extends Component {
       return (
         <header>
           <div className='buttons-group hide'>
-            <a>Dashboard</a>
-            <a>Account</a>
+            <div>Dashboard</div>
+            <div>Account</div>
           </div>
           <Link to='/exanin'><h1>Exanin</h1></Link>
           <div className='buttons-group'>
@@ -23,8 +23,8 @@ class Header extends Component {
       return (
         <header>
           <div className='buttons-group hide'>
-            <a>Sign Up</a>
-            <a>Login</a>
+            <div>Sign Up</div>
+            <div>Login</div>
           </div>
           <Link to='/exanin'><h1>Exanin</h1></Link>
           <div className='buttons-group'>

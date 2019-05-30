@@ -51,7 +51,7 @@ class Account extends Component {
 
         <div className='account-header'>
           <h1>My Account</h1>
-          <a id='logout' onClick={this.logout}>Log out</a>
+          <div id='logout' onClick={this.logout}>Log out</div>
         </div>
 
         <hr />
